@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Varela Round", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: radial-gradient(circle at 84.2% -9.23%, #e695ff 0, #ba81fc 25%, #8f6cd8 50%, #6757b3 75%, #444391 100%);
+}
+
+.container {
+  position: relative;
+  max-width: 330px;
+  width: 100%;
+  border-radius: 12px;
+  padding: 10px 20px 20px;
+  background: rgba(45, 42, 55, 1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.display {
+  height: 99px;
+  width: 100%;
+  outline: none;
+  border: none;
+  text-align: right;
+  margin-bottom: 10px;
+  font-size: 32px;
+  color: white;
+  background: transparent;
+  pointer-events: none;
+  overflow-x: auto;
+  user-select: none;
+  padding-right: 5px;
+}
+
+.buttons {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.buttons button {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 999px;
+  font-size: 22px;
+  cursor: pointer;
+  color: white;
+  user-select: none;
+  background: linear-gradient(0deg, #2D2A37, #45414e),
+              linear-gradient(180deg, rgba(145, 141, 141, 0.05) 0%, rgba(138, 128, 128, 0.05) 100%);
+  transition: background 0.2s;
+}
+
+.buttons button:hover {
+  background: #5b5499;
+}
+
+.buttons button:focus {
+  outline: 2px solid #a07cff;
+  outline-offset: 2px;
+}
+
+.buttons button:active {
+  transform: scale(0.99);
+}
